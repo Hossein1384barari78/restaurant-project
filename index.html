@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family-Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display-swap" rel="">
     <link href="https://fonts.googleapis.com/css2?family-kaushan+Script&family-Poppins:ital,wght@0,100;0,200;0,300;1,100;1,">
     <link rel="stylesheet" href="style.css">
@@ -34,23 +35,43 @@
 <div id="menuBtn">
     <img src="bx-menu.svg" alt="" id="menu">
 </div>
+   <section id="Staff">
+       <div class="title-text">
+           <p>STAFF</p>
+           <h1>why chose uS</h1>
+       </div>
+       <div class="staff-box">
+       <div class="staff">
+       <h1> Experienced Staff</h1>
+       <div class="staff-desc">
+           <div class="staff=icon">
+               <i class="fa fa-shield"></i>
+
+       </div>
+           <div class="staff-text">Lorem ipsum dolor sit amet consectetur, adipiisicing
+               elite.Perfeinds debitis sequi consectetur</div>
+       </div>
+       </div>
+       </div>
+
+   </section>
 <script>
-    var menuBtn =document.getElementById("menuBtn")
-    var sidenav =document.getElementById("sidenav")
-    var menu =document.getElementById("menu")
+    var menuBtn =document.getElementById("menuBtn");
+    var sidenav =document.getElementById("sidenav");
+    var menu =document.getElementById("menu");
     sidenav.style.right ="-250px"
     menuBtn.onclick=function () {
         if (sidenav.style.right == "-250px"){
             sidenav.style.right = "0";
-            menu.src="Resto-img/close.png";
+            menu.src="bx-x.svg";
         }
         else {
 
-                sidenav.style.right = "-250";
-                menu.src="Resto-img/menu.png";
+                sidenav.style.right = "-250px";
+                menu.src="bx-menu.svg";
         }
     }
-    sidenav.style.right ="-250px"
+
 </script>
 
 </body>
