@@ -113,6 +113,7 @@ nav ul li a{
 .title-text {
     text-align: center;
     padding-bottom: 70px;
+    padding-top: 70px;
 }
 .title-text p {
     margin: auto;
@@ -180,6 +181,12 @@ nav ul li a{
     color: var(--btn-color);
     border: 1px solid var(--btn-color);
 }
+.staff-text {
+    padding: 0 12px;
+    text-align: initial;
+}
+
+
 
 
 
@@ -197,3 +204,20 @@ nav ul li a{
     }
 }
 
+/*Staff Part Responivness*/
+
+@media only screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .staff {
+        flex-basis: 100%;
+    }
+    .staff-img {
+        flex-basis: 100%;
+    }
+    .staff-img img {
+        width: 100%;
+    }
+
+}
