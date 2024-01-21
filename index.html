@@ -10,7 +10,7 @@
 </head>
 <body>
    <section id="banner">
-       <img src="" alt="" class="logo">
+       <img src="images.png" alt="" class="logo">
        <div class="banner-text">
            <h1>Barbecue Restaurant</h1>
            <p>lorem, ipsum dolor sit amet consectetur adipisicing.</p>
@@ -20,6 +20,38 @@
            </div>
        </div>
    </section>
+   <div id="sidenav">
+       <nav>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Staff</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Testimonial</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+       </nav>
+   </div>
+<div id="menuBtn">
+    <img src="bx-menu.svg" alt="" id="menu">
+</div>
+<script>
+    var menuBtn =document.getElementById("menuBtn")
+    var sidenav =document.getElementById("sidenav")
+    var menu =document.getElementById("menu")
+    sidenav.style.right ="-250px"
+    menuBtn.onclick=function () {
+        if (sidenav.style.right == "-250px"){
+            sidenav.style.right = "0";
+            menu.src="Resto-img/close.png";
+        }
+        else {
+
+                sidenav.style.right = "-250";
+                menu.src="Resto-img/menu.png";
+        }
+    }
+    sidenav.style.right ="-250px"
+</script>
 
 </body>
 </html>
