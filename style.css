@@ -157,8 +157,10 @@ nav ul li a{
     margin: auto;
 }
 .staff-img img {
-    width: 70%;
+    width: 50%;
     border-radius: 10%;
+    float: right;
+    margin-top: -355px;
 }
 .staff h1 {
     text-align: left;
@@ -250,6 +252,67 @@ hr {
     opacity: 1;
 }
 
+/*Testimonials*/
+
+#testimonials {
+    width: 100%;
+    padding: 70px 0;
+
+}
+.testimonial-row
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col
+{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.testimonial-col p {
+    font-size: 14px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .fa {
+    margin-left: 10px;
+    color: var(--btn-color);
+    font-size: 20px;
+}
+
+.user-info small {
+    color: #0096;
+}
+
+.testimonial-col:hover {
+    transform: translateY(-7px);
+}
+
+
+
+
+
+
 
 
 
@@ -280,6 +343,21 @@ hr {
     }
     .staff-img img {
         width: 100%;
+    }
+
+}
+
+/*Services Responsivness*/
+@media only screen and (max-width: 700px){
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-style: 12px;
+    }
+    .single-service:hover .service-desc{
+        bottom: 25% !important;
     }
 
 }
