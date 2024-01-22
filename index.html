@@ -249,8 +249,9 @@
                 menu.src="icons/bx-menu.svg";
         }
     }
-    var scroll = new SnoothScroll('a[href*-"#"]', {
-        speed: 500,
+    // All animations will take exactly 500ms
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 2000,
         speedAsDuration: true
     });
 </script>
