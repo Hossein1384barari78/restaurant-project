@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family-Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display-swap" rel="">
     <link href="https://fonts.googleapis.com/css2?family-kaushan+Script&family-Poppins:ital,wght@0,100;0,200;0,300;1,100;1,">
@@ -24,11 +25,11 @@
    <div id="sidenav">
        <nav>
            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Staff</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Testimonial</a></li>
-               <li><a href="#">Contact</a></li>
+               <li><a href="#banner">Home</a></li>
+               <li><a href="#Staff">Staff</a></li>
+               <li><a href="#service">Services</a></li>
+               <li><a href="#testimonials">Testimonial</a></li>
+               <li><a href="#footer">Contact</a></li>
            </ul>
        </nav>
    </div>
@@ -170,7 +171,7 @@
    </section>
    <!--Footer Part Here-->
    <section id="footer">
-       <img src="" alt="" class="footer-img">
+       <img src="imagesssssss.png" alt="" class="footer-img">
        <div class="title-text">
            <p>CONTACT</p>
            <h1>Come And Taste Today</h1>
@@ -185,7 +186,15 @@
                <h1>Get in Touch</h1>
                <p>#25 Indiranagar, Bengaluru, India <i class="fa fa-map-maker"></i></p>
                <p>codeiscodespace@gmail.com <i class="fa fa-paper-plane"></i></p>
+               <p>+9111111111 <i class="fa fa-phone"></i></p>
            </div>
+       </div>
+       <div class="social-link">
+           <i class="fa fa-facebook"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-twitter"></i>
+           <i class="fa fa-youtube-play"></i>
+           <p>Copyright CodeSpace YoutubeChannel</p>
        </div>
    </section>
 <script>
@@ -204,7 +213,10 @@
                 menu.src="bx-menu.svg";
         }
     }
-
+    var scroll = new SnoothScroll('a[href*-"#"]', {
+        speed: 500,
+        speedAsDuration: true
+    });
 </script>
 
 </body>
