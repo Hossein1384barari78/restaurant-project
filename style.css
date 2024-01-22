@@ -275,7 +275,7 @@ hr {
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #00968814;
+    box-shadow: 0 10px 20px 3px var(--back-color);
     cursor: pointer;
     transition: transform .5s;
 }
@@ -301,7 +301,7 @@ hr {
 }
 
 .user-info small {
-    color: #0096;
+    color: var(--back-color);
 }
 
 .testimonial-col:hover {
@@ -360,4 +360,10 @@ hr {
         bottom: 25% !important;
     }
 
+}
+/*Testimonial Responsivness*/
+@media only screen and (max-width: 700px){
+    .testimonial-col {
+        flex-basis: 100%;
+    }
 }
